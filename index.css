@@ -3,9 +3,11 @@ html {
 }
 
 body {
-	background-image: url("under_construction.png");
-	background-position: center top;
-	background-size: auto;
-    background-repeat: no-repeat;
-	margin: 0;
+	background-color: #333333;
+}
+
+#construction img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
