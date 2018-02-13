@@ -1,3 +1,3 @@
-# stevenbruno.github.com
+# stevenbruno.github.io
 
 My personal website. Currently under construction!
