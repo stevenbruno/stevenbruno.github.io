@@ -1,5 +1,5 @@
 function dropmenu() {
-  document.getElementById("droplist").classList.toggle("show");
+	document.getElementById("droplist").classList.toggle("show");
 }
 
 //close dropdown if user clicks outside of it
