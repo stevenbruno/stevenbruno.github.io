@@ -1,131 +1,152 @@
-html {
-	font-family: 'Crimson Text', sans-serif;
-}
+/*main styling*/
 
-body {
-	background-color: #080808;
-}
-
-a:link, a:visited {
-	text-decoration: none;
-}
-
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
-.material-icons.md-36 { font-size: 36px; }
+	html {
+		font-family: 'Crimson Text', sans-serif;
+	}
 
 
-.dropbtn {
-
-}
-
-.dropbtn:hover, .dropbtn:focus {
-
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown_content {
-    display: none;
-    position: absolute;
-    background-color: #080808;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown_content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {
-	background-color: #ddd
-}
-
-.show {display:block;} 
+	body {
+		background-color: #111010;
+	}
 
 
-.main_container {
-	display: flex;
-	/*background-color: grey;*/
-	height: 33vh;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin-top: 20vh;
-}
+	.show {display:block;} 
 
-.main_container div {
-	/*background-color: blue;*/
-	width: 25vh;
-	height: 90%;
-	margin: 10px 20px;
-	text-align: center;
-}
 
-#design_image {
-	margin-top: 10;
-	width: 90%;
-	height: 80%;
-}
+	.main_index_container {
+		display: flex;
+		height: 33vh;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin-top: 20vh;
+	}
 
-#code_image {
-	margin-top: 10;
-	width: 90%;
-	height: 80%;
-}
 
-#about_image {
-	margin-top: 10;
-	width: 90%;
-	height: 80%;
-}
+	.main_index_container div {
+		width: 25vh;
+		height: 90%;
+		margin: 10px 20px;
+		text-align: center;
+	}
 
-.caption {
-	font: 1.25em "Montserrat", sans-serif;
-	color: #d2d5db;
-	width: 100px;
-	text-align: center;
-	margin: auto;
-	margin-top: 1em;
-}
 
-.caption:hover {
-	transform: scale(1.1);
-	color: #82a1d8;
-}
+	#design_image {
+		margin-top: 10;
+		width: 90%;
+		height: 80%;
+	}
 
-#code_image:hover, #design_image:hover, #about_image:hover {
-	transform: scale(1.05);
-}
 
-#coming_soon {
-	font: 1.5rem "Montserrat", sans-serif;
-	width: 50%;
-	margin: 5rem auto 0 auto;
-	text-align: center;
-	color: #d2d5db;
-}
+	#code_image {
+		margin-top: 10;
+		width: 90%;
+		height: 80%;
+	}
 
-.about_content_wrapper {
+
+	#about_image {
+		margin-top: 10;
+		width: 90%;
+		height: 80%;
+	}
+
+
+	.about_content_wrapper {
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
-	font: 1.25rem "Georgia", "Helvetica", serif;
-	color: #d2d5db;
-	text-align: left;
-	line-height: 130%;
-	width: 100%;
-	max-width: 500px; 	
-	margin: 5rem auto 0 auto;
-}
+	align-items: center;
+	}
 
-.about_content_wrapper a:link a:visited {
-	text-decoration: none;
-	color: inherit;
-}
+
+	.about_content_wrapper div {
+		font: 1.25em "Georgia", "Helvetica", serif;
+		color: #d2d5db;
+		line-height: 1.75rem;
+		width: 100%;
+		max-width: 50%;
+		margin-bottom: 3rem;
+	}
+
+
+	#coming_soon {
+		font: 1.25em "Montserrat", sans-serif;
+		color: #d2d5db;
+		margin: 0 auto 0 auto;
+		text-align: center;	
+	}
+	
+
+	.index_icon a {
+		text-decoration: none;
+	}
+
+/*link styling*/
+
+	.caption {
+		font: 1.25em "Montserrat", sans-serif;
+		color: #d2d5db;
+		width: 100px;
+		text-align: center;
+		margin: auto;
+		margin-top: 1em;
+	}
+
+
+	.caption:hover {
+		transform: scale(1.05);
+		color: #82a1d8;
+	}
+
+
+	#code_image:hover, #design_image:hover, #about_image:hover {
+		transform: scale(1.05);
+	}
+
+	.about_content_wrapper a {
+		text-decoration: none;
+		color: #82a2d8;
+	}
+
+
+/*navigation styling*/
+
+	.navbar {
+		font: 1.25em "Montserrat", sans-serif;
+		color: #d2d5db;
+		height: 5rem;
+		margin: 2rem 3rem;
+	}
+
+	.nav_item {
+		float: right;
+		margin-left: 2rem;
+	}
+
+
+	.active {
+		color: #82a1d8;
+		text-decoration: none;
+	}
+
+
+	.nonactive {
+		text-decoration: none;
+		color: inherit;
+	}
+
+
+	.navbar a:hover {
+		transform: scale(1.05);
+		color: #82a1d8;
+	}
+
+
+	#home_icon {
+		font-size: 30px;
+		margin-top: -0.4rem;
+		margin-left: .5rem;
+	}
+
+	#home_icon:hover {
+		transform: scale(1.05);
+	}
