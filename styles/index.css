@@ -50,17 +50,23 @@
 		height: 80%;
 	}
 
+	
+	#about_body {
+		background: #fff;
+	}
+
 
 	.about_content_wrapper {
-	display: flex;
-	flex-flow: column nowrap;
-	align-items: center;
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
 	}
 
 
 	.about_content_wrapper div {
 		font: 1.25em "Georgia", "Helvetica", serif;
-		color: #d2d5db;
+		font-weight: 500;
+		color: #111010;
 		line-height: 1.75rem;
 		width: 100%;
 		max-width: 50%;
@@ -104,7 +110,7 @@
 
 	.about_content_wrapper a {
 		text-decoration: none;
-		color: #82a2d8;
+		color: #82a1d8;
 	}
 
 
@@ -116,6 +122,12 @@
 		height: 5rem;
 		margin: 2rem 3rem;
 	}
+
+
+	.dark_navbar {
+		color: #111010;
+	}
+
 
 	.nav_item {
 		float: right;
