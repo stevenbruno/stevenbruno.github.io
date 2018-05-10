@@ -154,6 +154,8 @@
 	}
 
 
+/*material icons*/
+
 	#home_icon {
 		font-size: 30px;
 		margin-top: -0.4rem;
@@ -162,4 +164,11 @@
 
 	#home_icon:hover {
 		transform: scale(1.05);
+	}
+
+	#email_icon {
+		font-size: 18px;
+		vertical-align: middle;
+		margin-bottom: 0.1rem;
+		color: red;
 	}
