@@ -30,30 +30,46 @@
 	}
 
 
-	#design_image {
-		margin-top: 10;
+	#essays_image {
 		width: 90%;
 		height: 80%;
+		padding-left: 15px;
+		padding-top: 10px;
 	}
 
 
-	#code_image {
-		margin-top: 10;
+	#projects_image {
 		width: 90%;
 		height: 80%;
 	}
 
 
 	#about_image {
-		margin-top: 10;
 		width: 90%;
 		height: 80%;
 	}
 
 	
 	#about_body {
-		transition: background-color 0.5s ease;
-		background: #fff;
+		-webkit-animation-name: about_fadein; /*safari 4.0 - 8.0*/
+		-webkit-animation-duration: 3s; /*safari 4.0 - 8.0*/
+		-webkit-animation-fill-mode: forwards;
+		animation-name: about_fadein;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+	}
+
+	
+	/*safari 4.0 - 8.0*/
+	@-webkit-keyframes about_fadein {
+		from {background-color: #111010;}
+		to {background-color: #f1f1f1;}
+	}
+
+
+	@keyframes about_fadein {
+		from {background-color: #111010;}
+		to {background-color: #f1f1f1;}
 	}
 
 
@@ -87,6 +103,31 @@
 		text-decoration: none;
 	}
 
+	
+
+	#name_footer {
+		width: 50%;
+		margin: auto;
+		margin-top: 15em;
+	}
+
+
+	#name_footer_name {
+		font: 1.25em "Montserrat", sans-serif;
+		color: #97bcd8;
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+
+	#name_footer_date {
+		font: 1em "Montserrat", sans-serif;
+		color: #5f6f8c;
+		text-align: center;
+		margin-top: 0.25em;
+	}
+
 /*link styling*/
 
 	.caption {
@@ -97,7 +138,7 @@
 		margin: auto;
 		margin-top: 1em;
 	}
-
+	
 
 	.caption:hover {
 		transform: scale(1.05);
@@ -105,13 +146,38 @@
 	}
 
 
-	#code_image:hover, #design_image:hover, #about_image:hover {
+
+	#essays_caption {
+		margin-top: 10px;
+	}
+
+
+
+	#essays_image:hover, #projects_image:hover, #about_image:hover {
 		transform: scale(1.05);
 	}
 
 	.about_content_wrapper a {
 		text-decoration: none;
-		color: #82a1d8;
+		-webkit-animation-name: link_fadein /*safari 4.0 - 8.0*/
+		-webkit-animation-duration: 3s; /*safari 4.0 - 8.0*/
+		-webkit-animation-fill-mode: forwards;
+		animation-name: link_fadein;
+		animation-duration: 3s;
+		animation-fill-mode: forwards;
+	}
+
+	
+	/*safari 4.0 - 8.0*/
+	@-webkit-keyframes link_fadein {
+		from {color: #111010;}
+		to {color: #82a1d8;}
+	}
+
+
+	@keyframes link_fadein {
+		from {color: #111010;}
+		to {color: #82a1d8;}
 	}
 
 
@@ -170,5 +236,23 @@
 		font-size: 18px;
 		vertical-align: middle;
 		margin-bottom: 0.1rem;
-		color: red;
+		-webkit-animation-name: email_fadein /*safari 4.0 - 8.0*/
+		-webkit-animation-duration: 4s; /*safari 4.0 - 8.0*/
+		-webkit-animation-fill-mode: forwards;
+		animation-name: email_fadein;
+		animation-duration: 4s;
+		animation-fill-mode: forwards;
+	}
+
+	
+	/*safari 4.0 - 8.0*/
+	@-webkit-keyframes email_fadein {
+		from {color: #111010;}
+		to {color: red;}
+	}
+
+
+	@keyframes email_fadein {
+		from {color: #111010;}
+		to {color: red;}
 	}
