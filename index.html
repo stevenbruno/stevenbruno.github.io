@@ -13,28 +13,28 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
   </head>
-  <body>
-    <div class="main_index_container">
-      <div class="index_icon">
-        <a href="essays.html">
-          <img id="essays_image" src="images/pencil_white-03.svg" alt="essays">
-          <p class="caption" id="essays_caption">essays</p>
-        </a>  
+  <body id="index_body"> <!-- parent grid containter -->
+      <div class="main_index_container">
+        <div class="index_icon">
+          <a href="essays.html">
+            <img id="essays_image" src="images/pencil_white-03.svg" alt="essays">
+            <p class="caption" id="essays_caption">essays</p>
+          </a>  
+        </div>
+        <div class="index_icon">
+          <a href="https://github.com/stevenbruno">
+            <img id="projects_image" src="images/github-01.svg" alt="code">
+            <p class="caption">projects</p>
+          </a>
+        </div>
+        <div class="index_icon">
+          <a href="about.html">
+            <img id="about_image" src="images/face_face.svg" alt="about">
+            <p class="caption">about</p>
+          </a>
+        </div>
       </div>
-      <div class="index_icon">
-        <a href="https://github.com/stevenbruno">
-          <img id="projects_image" src="images/github-01.svg" alt="code">
-          <p class="caption">projects</p>
-        </a>
-      </div>
-      <div class="index_icon">
-        <a href="about.html">
-          <img id="about_image" src="images/face_face.svg" alt="about">
-          <p class="caption">about</p>
-        </a>
-      </div>
-    </div>
-    <footer id="name_footer">
+    <footer id="name_footer"> <!-- footer element inside grid container-->
       <p id="name_footer_name">Steven Bruno</p>
       <p id="name_footer_date">2018</p>
     </footer>
